@@ -1,4 +1,52 @@
 h1
 {
-	text-allign:center;
+	text-align:center;
+}
+p{
+	background-color: grey;
+	border:5px solid black;
+	padding: 50px 10px 10px 10px;
+	margin: 20px 20px 20px 20px; 
+}
+@media(min-width:992px )
+{
+	.p1{
+		width: 33%;
+		float: left;
+	}
+	.p2{
+		width: 33%;
+		float: left;
+	}
+	.p3{
+		width: 33%;
+		float: left;
+	}
+}
+@media(min-width: 768px ,max-height: 991px)
+{
+	.p1{
+		width:50%; 
+		float: left;
+	}
+	.p2{
+		width:50%; 
+		float: left;
+	}
+	.p3{
+		width: 100%;
+	}
+}
+@media(max-width: 767px)
+{
+	.p1{
+		width:100%; 
+	}
+	.p2{
+		width:100%; 
+	}
+	.p3{
+		width: 100%;
+	}
+
 }
