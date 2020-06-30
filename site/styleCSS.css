@@ -1,52 +1,53 @@
-h1
-{
+h1{
 	text-align:center;
 }
-p{
+.one,.two,.three{
 	background-color: grey;
-	border:5px solid black;
-	padding: 50px 10px 10px 10px;
-	margin: 20px 20px 20px 20px; 
+	border: 1px solid black;
+	font-size: 15px;
+	margin: 10px;
+	box-sizing: box-border;
 }
-@media(min-width:992px )
-{
-	.p1{
-		width: 33%;
-		float: left;
-	}
-	.p2{
-		width: 33%;
-		float: left;
-	}
-	.p3{
-		width: 33%;
-		float: left;
-	}
+.p1,.p2,.p3{
+	padding:5px;
+	clear: both;
 }
-@media(min-width: 768px ,max-height: 991px)
-{
-	.p1{
-		width:50%; 
-		float: left;
-	}
-	.p2{
-		width:50%; 
-		float: left;
-	}
-	.p3{
-		width: 100%;
-	}
-}
-@media(max-width: 767px)
-{
-	.p1{
-		width:100%; 
-	}
-	.p2{
-		width:100%; 
-	}
-	.p3{
-		width: 100%;
-	}
 
+.h1
+{	float: right;
+	padding: 10px;
+	margin-bottom:-10px; 
+	border: 1px solid black;
+	background-color: pink;
+}
+.h2{
+	float: right;
+	padding: 10px;
+	margin-bottom:-10px;  
+	border: 1px solid black;
+	background-color: red;
+	color: white;
+}
+.h3{
+	float: right;
+	padding: 10px;
+	margin-bottom:-10px;  
+	border: 1px solid black;
+	background-color:#FFFFCC;
+}
+@media(min-width: 992px){
+	.one,.two,.three{
+		width: 30%;
+		float: left;
+	}
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.one,.two{
+		width: 45%;
+		float: left;
+	}
+	.three{
+		width: 95%;
+		clear: both;
+	}
 }
